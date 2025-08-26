@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Garçom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/garcom.css">
+</head>
+<body>
+
+    <div class="background-unified"></div>
+
+    <header class="menu-top-unified">
+        <a href="index.html" class="menu-item-unified">Cliente</a>
+        <a href="cozinha.html" class="menu-item-unified">Cozinha</a>
+    </header>
+
+    <main class="main-panel-unified">
+        <div class="panel-header-unified">
+            <span class="icon-glass-unified">🍷</span>
+            <h1 class="panel-title-unified">Painel do Garçom</h1>
+        </div>
+
+        <div class="panel-section-unified">
+            <label for="table-number" class="label-text-unified">Mesa:</label>
+            <input type="text" id="table-number" class="input-field-unified" placeholder="Número da mesa">
+        </div>
+
+        <div class="panel-section-unified">
+            <h2 class="section-title-unified">Itens</h2>
+            <div class="item-buttons-container-unified">
+                <button class="item-button-unified">Pizza</button>
+                <button class="item-button-unified">Lasanha</button>
+                <button class="item-button-unified">Suco</button>
+            </div>
+        </div>
+
+        <div class="panel-section-unified">
+            <h2 class="section-title-unified">Pedido Atual:</h2>
+            <div class="order-list-unified">
+                <p>Nenhum item adicionado.</p>
+            </div>
+        </div>
+        
+        <button class="submit-button-unified">Enviar Pedido</button>
+    </main>
+
+</body>
+</html>

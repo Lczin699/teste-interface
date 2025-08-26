@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Cozinha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cozinha.css">
+</head>
+<body>
+
+    <div class="background-kitchen"></div>
+
+    <header class="menu-top-kitchen">
+        <a href="garcom.html" class="menu-item-kitchen">Garçom</a>
+        <a href="index.html" class="menu-item-kitchen">Cliente</a>
+    </header>
+
+    <main class="main-panel-kitchen">
+        <div class="panel-header-kitchen">
+            <span class="icon-chef">👨‍🍳</span>
+            <h1 class="panel-title-kitchen">Painel da Cozinha</h1>
+        </div>
+
+        <div class="orders-container">
+            <div class="order-card">
+                <div class="order-card-header">
+                    <h3 class="table-number">Mesa 12</h3>
+                    <span class="order-status preparing-status">Em preparo</span>
+                </div>
+                <ul class="order-items">
+                    <li>1x Pizza Calabresa</li>
+                    <li>2x Coca-Cola</li>
+                    <li>1x Lasanha Bolonhesa</li>
+                </ul>
+                <div class="order-actions">
+                    <button class="action-button preparing-button">Em preparo</button>
+                    <button class="action-button ready-button">Pronto</button>
+                    <button class="action-button delivered-button">Entregue</button>
+                </div>
+            </div>
+
+            <div class="order-card">
+                <div class="order-card-header">
+                    <h3 class="table-number">Mesa 5</h3>
+                    <span class="order-status ready-status">Pronto</span>
+                </div>
+                <ul class="order-items">
+                    <li>1x Suco de Laranja</li>
+                </ul>
+                <div class="order-actions">
+                    <button class="action-button preparing-button">Em preparo</button>
+                    <button class="action-button ready-button">Pronto</button>
+                    <button class="action-button delivered-button">Entregue</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

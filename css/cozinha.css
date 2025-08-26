@@ -1,0 +1,188 @@
+/* Estilos globais e de corpo */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; /* Permite rolagem vertical se a lista for longa */
+    background-color: #f9f9f9;
+}
+
+/* Fundo com imagem desfocada para a tela da cozinha */
+.background-kitchen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2000&auto=format&fit=crop') no-repeat center center/cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+/* Estilização do cabeçalho */
+.menu-top-kitchen {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.menu-item-kitchen {
+    text-decoration: none;
+    color: #444;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    transition: color 0.3s ease;
+}
+
+.menu-item-kitchen:hover {
+    color: #a04040;
+}
+
+/* Estilos do painel principal da cozinha */
+.main-panel-kitchen {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Estilo do cabeçalho do painel com ícone */
+.panel-header-kitchen {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-chef {
+    font-size: 3rem;
+    color: #5d2b2b;
+}
+
+.panel-title-kitchen {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #5d2b2b;
+    margin: 0;
+}
+
+/* Estilo do container de pedidos */
+.orders-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo para cada cartão de pedido */
+.order-card {
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho do cartão de pedido */
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.table-number {
+    font-size: 1.5rem;
+    color: #5d2b2b;
+    margin: 0;
+}
+
+/* Estilo do status do pedido */
+.order-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.preparing-status {
+    background-color: #f7a233; /* Laranja para "Em preparo" */
+}
+
+.ready-status {
+    background-color: #4CAF50; /* Verde para "Pronto" */
+}
+
+.delivered-status {
+    background-color: #888; /* Cinza para "Entregue" */
+}
+
+/* Lista de itens do pedido */
+.order-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.order-items li {
+    padding: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Ações e botões */
+.order-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.action-button {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preparing-button {
+    background-color: #a04040; /* Cor principal da paleta */
+}
+.ready-button {
+    background-color: #4CAF50;
+}
+.delivered-button {
+    background-color: #888;
+}
